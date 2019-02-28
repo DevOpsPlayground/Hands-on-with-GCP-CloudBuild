@@ -169,7 +169,6 @@ It looks like our application builds successfully, well done!
 Checkpoint:
 1. What is missing?
 2. What could we do to speed the build up when running this build several times?
-3. What could we do to speed up the process even more?
 
 ### Stage 2 - Automated tests
 
