@@ -17,38 +17,42 @@ We will build, test and deploy a simple web application to Google App Engine.
 This is for your information only, this has already been done for you.
 This can definitely be improved, but hey, if it works...
 
-### API needed to be activated
-Google Cloud Storage JSON API
-Google Cloud Storage JSON API 
-CloudBuild API
-App Engine API
+### APIs needed to be activated
+Identity and Access Management (IAM) API  
+Google Cloud Storage JSON API    
+CloudBuild API  
+App Engine API  
+Cloud Resource Manager API  
+Google App Engine Flexible Environment
+
+### Individual service accounts permissions needed
+App Engine Admin - roles/appengine.appAdmin  
+App Engine Deployer - roles/appengine.deployer  
+Cloud Build Service Account - roles/cloudbuild.builds.builder  
+Cloud Build Editor - roles/cloudbuild.builds.editor  
+Compute Instance Admin (beta) - roles/compute.instanceAdmin  
+Service Accounts User - roles/iam.serviceAccountUser  
+Project Owner - roles/owner  
+Project Viewer - roles/viewer  
+Storage Admin - roles/storage.admin  
+Storage Object Admin - roles/storage.objectAdmin  
+Storage Object Creator - roles/storage.objectCreator  
+Storage Object Viewer - roles/storage.objectViewer  
 
 
-### Individual service accounts permissions
-App Engine Admin - roles/appengine.appAdmin
-App Engine Deployer - roles/appengine.deployer
-Cloud Build Service Account - roles/cloudbuild.builds.builder
-Cloud Build Editor - roles/cloudbuild.builds.editor
-Compute Instance Admin (beta) - roles/compute.instanceAdmin
-Service Accounts User - roles/iam.serviceAccountUser
-Project Owner - roles/owner
-Project Viewer - roles/viewer
-Storage Admin - roles/storage.admin
-Storage Object Admin - roles/storage.objectAdmin
-Storage Object Creator - roles/storage.objectCreator
-Storage Object Viewer - roles/storage.objectViewer
+### Root service account permissions needed  
+Cloud Build Service Account  
+Cloud Build Editor  
+Editor  
+Role Administrator  
+Service Account Admin  
+Delete Service Accounts  
+Service Account Key Admin  
+Project IAM Admin  
+Storage Admin  
+App Engine Deployer  
+Project Owner  
 
-
-### Root service account
-Cloud Build Service Account
-Cloud Build Editor
-Editor
-Role Administrator
-Service Account Admin
-Delete Service Accounts
-Service Account Key Admin
-Project IAM Admin
-Storage Admin 
 
 ### Creating the default App Engine service
 This needs to be done only once in a project  
